@@ -1,6 +1,3 @@
-console.log('Script is running')
-
-
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const mes1 = document.querySelector('#m1')
