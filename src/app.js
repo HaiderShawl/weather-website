@@ -32,15 +32,6 @@ app.get('', (req, res) => {
 });
 
 
-// app.get('/weather', (req, res) => {
-//     res.render('weather', {
-//         title: 'Weather',
-//         name: 'Haider',
-//         location: 'Srinagar',
-//         weather: 'Sunny'
-//     })
-// });
-
 
 app.get('/weather', (req, res) => {
     address = req.query.address
@@ -68,13 +59,13 @@ app.get('/weather', (req, res) => {
     })
 })
 
-app.get('/help/*', (req, res) => {
-    res.render('error', {
-        title: 'Error Page',
-        errorMessage: 'Help article not found',
-        name: 'Haider'
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'About',
+        name: 'Haider',
     })
 })
+
 
 app.get('*', (req, res) => {
     res.render('error', {
