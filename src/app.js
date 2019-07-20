@@ -12,6 +12,7 @@ const publicPath = path.join(__dirname, '../public')
 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 
 //setting handlebars and views location
