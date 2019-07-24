@@ -29,7 +29,7 @@ app.get('', (req, res) => {
         title: 'Homepage',
         name: 'Haider'
     })
-});
+})
 
 
 
